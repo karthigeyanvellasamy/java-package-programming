@@ -5,6 +5,12 @@ Java Version : Java 11.0.14
 
 ### Reference Documentation
 
+Code is interesting only after we start to understand the basic. From basic comes problem solving to advance coding.
+Root is always to understand basics. Below are the base packages we are gonna cover with appropriate sample coding.
+------------------------------------------------------------
+
+
+
 ![Packages covered](images/package.png) 
 
  [java.base](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/module-summary.html)
