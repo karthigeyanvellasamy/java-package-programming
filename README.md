@@ -5,7 +5,9 @@ Java Version : Java 11.0.14
 
 ### Reference Documentation
 
-[java.base](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/module-summary.html)
+![Packages covered](images/package.png) 
+
+ [java.base](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/module-summary.html)
 
 1.  [io](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/package-summary.html)
 2.  [lang](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/package-summary.html)
