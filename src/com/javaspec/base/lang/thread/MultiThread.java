@@ -1,4 +1,4 @@
-package com.java.concorrency.thread;
+package com.javaspec.base.lang.thread;
 
 public class MultiThread extends Thread{
 	
