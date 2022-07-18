@@ -1,4 +1,4 @@
-package com.java.concorrency.Thread;
+package com.java.concorrency.thread;
 
 public class MultiThreadMain {
 	
