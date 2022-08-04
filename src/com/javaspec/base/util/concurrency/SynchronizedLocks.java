@@ -11,6 +11,10 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.concurrent.locks.StampedLock;
 import java.util.stream.IntStream;
 
+/**
+ * @author Karthigeyan Vellasamy
+ * {@link #ReentrantLock -> #ReadWriteLock -> #StampedLock}
+ */
 public class SynchronizedLocks {
 
 	//ReentrantLock

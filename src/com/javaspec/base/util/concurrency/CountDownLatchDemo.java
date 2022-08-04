@@ -2,6 +2,10 @@ package com.javaspec.base.util.concurrency;
 
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * @author Karthigeyan Vellasamy
+ * {@link #CountDownLatch}
+ */
 public class CountDownLatchDemo {
 
 	public static void main(String[] args)  {

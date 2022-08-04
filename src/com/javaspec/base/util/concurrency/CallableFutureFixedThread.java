@@ -8,6 +8,10 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * @author Karthigeyan Vellasamy
+ * #Executors -> #Callable
+ */
 public class CallableFutureFixedThread {
 
 	public static void main(String[] args) throws TimeoutException {

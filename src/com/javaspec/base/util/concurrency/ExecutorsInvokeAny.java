@@ -8,6 +8,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author Karthigeyan Vellasamy
+ * {@link ExecutorService invokeAny}
+ */
 public class ExecutorsInvokeAny {
 	
 	static Callable<String> callable(String task, long time) {

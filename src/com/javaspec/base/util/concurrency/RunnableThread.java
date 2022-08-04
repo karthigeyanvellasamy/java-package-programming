@@ -2,6 +2,10 @@ package com.javaspec.base.util.concurrency;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author Karthigeyan Vellasamy
+ *{@link #Runnable}
+ */
 public class RunnableThread {
 
 	public static void main(String[] args)

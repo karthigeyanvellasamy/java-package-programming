@@ -7,6 +7,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author Karthigeyan Vellasamy
+ * {@link ExecutorService invokeAll}
+ */
 public class ExecutorsInvokeAll {
 
 	public static void main(String[] args) throws InterruptedException {
