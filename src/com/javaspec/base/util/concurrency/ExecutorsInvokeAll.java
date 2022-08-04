@@ -18,15 +18,15 @@ public class ExecutorsInvokeAll {
 			System.out.println("Thread : " + Thread.currentThread().getName());
 			return "Task1 completed";
 		}, () -> {
-			TimeUnit.SECONDS.sleep(2);
+			TimeUnit.SECONDS.sleep(1);
 			System.out.println("Thread : " + Thread.currentThread().getName());
 			return "Task2 completed";
 		}, () -> {
-			TimeUnit.SECONDS.sleep(2);
+			TimeUnit.SECONDS.sleep(3);
 			System.out.println("Thread : " + Thread.currentThread().getName());
 			return "Task3 completed";
 		}, () -> {
-			TimeUnit.SECONDS.sleep(2);
+			TimeUnit.SECONDS.sleep(1);
 			System.out.println("Thread : " + Thread.currentThread().getName());
 			return "Task4 completed";
 		});
