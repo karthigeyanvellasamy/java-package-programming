@@ -14,20 +14,24 @@ public class ExecutorsInvokeAll {
 		ExecutorService executor = Executors.newWorkStealingPool();
 
 		List<Callable<String>> tasks = Arrays.asList(() -> {
+			System.out.println("Thread : " + Thread.currentThread().getName()
+					+ " Process :" + ProcessHandle.current().pid());
 			TimeUnit.SECONDS.sleep(2);
-			System.out.println("Thread : " + Thread.currentThread().getName());
 			return "Task1 completed";
 		}, () -> {
+			System.out.println("Thread : " + Thread.currentThread().getName()
+					+ " Process :" + ProcessHandle.current().pid());
 			TimeUnit.SECONDS.sleep(1);
-			System.out.println("Thread : " + Thread.currentThread().getName());
 			return "Task2 completed";
 		}, () -> {
+			System.out.println("Thread : " + Thread.currentThread().getName()
+					+ " Process :" + ProcessHandle.current().pid());
 			TimeUnit.SECONDS.sleep(3);
-			System.out.println("Thread : " + Thread.currentThread().getName());
 			return "Task3 completed";
 		}, () -> {
+			System.out.println("Thread : " + Thread.currentThread().getName()
+					+ " Process :" + ProcessHandle.current().pid());
 			TimeUnit.SECONDS.sleep(1);
-			System.out.println("Thread : " + Thread.currentThread().getName());
 			return "Task4 completed";
 		});
 		
