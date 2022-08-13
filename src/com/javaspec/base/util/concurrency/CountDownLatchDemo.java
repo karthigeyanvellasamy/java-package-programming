@@ -1,5 +1,6 @@
 package com.javaspec.base.util.concurrency;
 
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CountDownLatch;
 
 /**
@@ -27,6 +28,7 @@ public class CountDownLatchDemo {
 		try {
 			System.out.println("Started threads");
 			latch.await();
+			System.out.println("End Task");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
