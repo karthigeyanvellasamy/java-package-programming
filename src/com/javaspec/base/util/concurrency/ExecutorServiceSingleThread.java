@@ -6,22 +6,19 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author Karthigeyan Vellasamy
- * #Executors
+ *         #Executors
  */
 public class ExecutorServiceSingleThread {
-	
+
 	public static void main(String[] args) {
-		
-		//Executor Service Single Thread
+
+		// Executor Service Single Thread
 		ExecutorService singleThread = Executors.newSingleThreadExecutor();
-		singleThread.submit(() ->{
+		singleThread.submit(() -> {
 			String taskName = Thread.currentThread().getName();
-			System.out.println("Single thread executor task Name: "+ taskName);
+			System.out.println("Single thread executor task Name: " + taskName);
 		});
-		
-		
-		
-		
+
 		try {
 			System.out.println("Shutdowning Executor Service...");
 			singleThread.shutdown();
@@ -29,14 +26,14 @@ public class ExecutorServiceSingleThread {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			System.out.println("task interrupted");
-		}finally {
-			if(!singleThread.isTerminated()) {
+		} finally {
+			if (!singleThread.isTerminated()) {
 				System.out.println("cancel all tasks");
 			}
 			singleThread.shutdownNow();
 			System.out.println("Shutdown the executor thread");
 		}
-		
+
 	}
-	
+
 }
