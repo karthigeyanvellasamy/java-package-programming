@@ -1,15 +1,14 @@
 package com.javaspec.base.util.concurrency;
 
-import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CountDownLatch;
 
 /**
  * @author Karthigeyan Vellasamy
- * {@link #CountDownLatch}
+ *         {@link #CountDownLatch}
  */
 public class CountDownLatchDemo {
 
-	public static void main(String[] args)  {
+	public static void main(String[] args) {
 
 		CountDownLatch latch = new CountDownLatch(3);
 
@@ -55,11 +54,11 @@ class Worker implements Runnable {
 		try {
 			Thread.sleep(delay);
 			latch.countDown();
-			System.out.println("Thread : "+ name );
+			System.out.println("Thread : " + name);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
 }
